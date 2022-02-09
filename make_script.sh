@@ -76,13 +76,13 @@ function import_testing_utilities() {
   local project_dir="$1"
   local utilities_dir="$2"
 
-  cp "${utilities_dir}/*" "${project_dir}"
+  cp ${utilities_dir}/* ${project_dir}
 }
 
 function main() {
   local project_name="$1"
   
-  local utilities_dir="~/Workspace/terminal/TESTING_UTILITIES"
+  local utilities_dir=~/Workspace/terminal/TESTING_UTILITIES
   local library_file="${project_name}_library.sh"
   local run_file="run.sh"
   local test_file="test_${project_name}.sh"
