@@ -56,7 +56,8 @@ function create_files() {
 function intialize_version_control() {
   local project_name="$1"
 
-  read -p "Press Y if you want to add git repository into your project : " option
+#  read -p "Press Y if you want to add git repository into your project : " option
+local option="Y"
   if [[ ${option} == "Y" ]]
   then
     cd ${project_name}
